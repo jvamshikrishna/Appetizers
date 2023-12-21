@@ -20,7 +20,7 @@ struct Appetizer: Decodable, Identifiable{
 }
 
 // we create a response inth format of json request ho w it is being pulled, json data has request with arrays in it
-struct AppetizerResponse {
+struct AppetizerResponse: Decodable {
     let request: [Appetizer]
 }
 
